@@ -1,0 +1,48 @@
+{
+  "name": "havana",
+  "version": "1.0.0",
+  "main": "webpack.mix.js",
+  "scripts": {
+    "dev": "node node_modules/cross-env/dist/bin/cross-env.js NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "node node_modules/cross-env/dist/bin/cross-env.js NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "node node_modules/cross-env/dist/bin/cross-env.js NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "node node_modules/cross-env/dist/bin/cross-env.js NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.13.8",
+    "@babel/preset-env": "^7.13.9",
+    "babel-loader": "^8.2.2",
+    "cross-env": "^5.2.0",
+    "html5shiv": "^3.7.3",
+    "laravel-mix": "^4.0.15",
+    "node-sass": "^4.12.0",
+    "resolve-url-loader": "^2.3.1",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.46.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.5.1",
+    "fsevents": "*",
+    "jquery": "^3.6.0",
+    "owl.carousel": "^2.3.4",
+    "postcss-cli": "^6.1.2",
+    "rellax": "^1.12.1",
+    "sal.js": "^0.8.4",
+    "sass": "^1.20.1"
+  },
+  "optionalDependencies": {
+    "fsevents": "*"
+  },
+  "description": "WordPress Theme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ReggieDuran/recreate-havana.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ReggieDuran/recreate-havana/issues"
+  },
+  "homepage": "https://github.com/ReggieDuran/recreate-havana#readme"
+}
