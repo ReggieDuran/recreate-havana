@@ -33,7 +33,5 @@ if ( get_header_image() ) {
 ?>
 </head>
 
-
 <body <?php body_class( $bodyClasses ) ?>>
-    <?php var_dump($headerImageUrl);?>
 </body>
