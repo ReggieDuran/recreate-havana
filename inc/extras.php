@@ -87,17 +87,11 @@ function havana_create_social_icons() {
 }
 
 function havana_get_home_caption() {
-	if ( ! class_exists( 'TitanFramework' ) ) {
+	if ( ! class_exists( 'ACF' ) ) {
 	    return;
 	}
 	
-	$titan = TitanFramework::getInstance( 'havana' );
-	
-	if ( ! $titan->getOption( 'home_caption' ) ) {
-		return;
-	}
-	
-	echo "<p class='tagline-description'>" . $titan->getOption( 'home_caption' ) . "<p>";
+	echo  get_field( 'site_description', 'options' ) ? "<p class='tagline-description'>" .  get_field( 'site_description', 'options' ) . "<p>" : '';
 }
 
 // @see	http://bavotasan.com/2011/convert-hex-color-to-rgb-using-php/
